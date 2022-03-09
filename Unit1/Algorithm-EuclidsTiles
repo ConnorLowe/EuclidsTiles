@@ -1,0 +1,30 @@
+PROGRAM Euclids_Tiles
+CREATE canvas size of 345L x 150W
+L = 345
+W = 150
+S = 15
+DECLARE numberOfTilesX = 345/15
+DECLARE numberOfTilesY = 150/15
+DECLARE X = 0
+DECLARE Y = 0
+DECLARE S = 15
+DECLARE C = Blue
+S1 = 0
+S2 = 0
+DECLARE tilesX = 0
+DECLARE tilesY = 0
+
+CREATE MySquare = DISPLAY MySquare(s1, s2 x, y, c)
+
+DISPLAY Rectangle(L, W,)
+WHILE tilesX < numberOfTilesX
+	MySquare(s, x, y, c)
+	x += s
+	tilesX += 1
+
+WHILE tilesY < numberOfTilesY
+	MySquare(s, x, y, c)
+	Y += -s
+	tilesY += 1
+
+END PROGRAM
